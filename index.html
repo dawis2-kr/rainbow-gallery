@@ -2407,7 +2407,7 @@
     if (!item) return;
     askConfirm({
       title: '이 항목을 삭제할까요?',
-      text: '“' + (item.title || stripExt(item.name)) + '”을(를) 이 브라우저에서 완전히 지웁니다. 되돌릴 수 없어요.',
+      text: '“' + (item.title || stripExt(item.name)) + '” 항목을 이 브라우저에서 완전히 지웁니다. 되돌릴 수 없어요.',
       okLabel: '삭제',
       onConfirm: function () {
         dbRequest('readwrite', function (store) { return store.delete(id); }).then(function () {
