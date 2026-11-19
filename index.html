@@ -604,8 +604,8 @@
     align-items: center;
     gap: 8px 16px;
   }
-  .foot-note { display: flex; align-items: center; gap: 8px; color: #b9b9cc; }
-  .foot-note .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--pride); flex: 0 0 auto; }
+  .foot-note { display: flex; align-items: flex-start; gap: 8px; color: #b9b9cc; }
+  .foot-note .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--pride); flex: 0 0 auto; margin-top: 6px; }
   .foot-stats { display: flex; flex-wrap: wrap; gap: 6px 14px; }
   .foot-stats b { color: #d5d5e6; font-weight: 650; }
   .foot-links { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -1015,7 +1015,6 @@
     .brand-mark { width: 36px; height: 36px; border-radius: 11px; }
     .brand-mark::after { inset: 6px; border-radius: 7px; }
     .top-actions .btn { padding: 8px 12px; font-size: 12.5px; }
-    .top-actions .btn-ghost-text { display: none; }
     .privacy-strip { font-size: 11.5px; padding: 6px 11px; }
     .controls { gap: 8px; margin: 14px 0 10px; }
     .search { flex: 1 1 100%; order: -1; }
@@ -1059,7 +1058,7 @@
         </div>
       </div>
       <div class="top-actions">
-        <button class="btn btn-soft" id="btn-backup" type="button">
+        <button class="btn btn-soft" id="btn-backup" type="button" aria-label="백업 안내">
           <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8m0 0 3-3M8 10 5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.5 11.5v1A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5v-1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
           <span class="btn-ghost-text">백업</span>
         </button>
